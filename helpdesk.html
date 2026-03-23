@@ -20,10 +20,10 @@
             <legend>Student Detail</legend>
             <label for="student_id">Student ID:</label>
             <input type="text" id="student_id" name="student_id"
-                pattern ="(?=\d){7,10}" title="Please enter 7 to 10 digits" required><br><br>
+                pattern ="(\d){7,10}" title="Please enter 7 to 10 digits" required><br><br>
             <label for="given_name">Given Name:</label>
             <input type="text" id="given_name" name="given_name"
-                pattern ="[A-Za-z\s]{15}" title ="Please enter only letters with max 15 characters" required>
+                pattern ="[A-Za-z\s]{1,15}" title ="Please enter only letters with max 15 characters" required>
             <label for="family_name">Family Name:</label>
             <input type="text" id="family_name" name="family_name"
                 pattern ="[A-Za-z\s]{1,15}" title ="Please enter only letters with max 15 characters" required>
@@ -73,9 +73,13 @@
 
         <fieldset>
             <legend>Preferred Date/Time</legend>
-            
+            <label for="date">Date</label>
+            <input type="text" id="date" name="DATE" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" title ="Please enter a valid date in the format dd/mm/yyyy" required><br>
+            <label for="time">Time</label>
+            <input type="text" id="time" name="TIME" placeholder="00:00" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" title ="Please enter a valid time in the format HH:MM" required><br><br>
         </fieldset>
-
+        <input type="submit" value="Book">
+        <input type="reset" value="Reset">
     </form>
 
 </body>
