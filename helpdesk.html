@@ -14,7 +14,7 @@
     <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday<br><br>
         Check Blackboard for when CWA tutors will be there.
     </p>
-    <form action="submit_form.php" method="post">
+    <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
         <fieldset>
             <legend>Student Detail</legend>
@@ -44,9 +44,9 @@
             <label for="tutors">Your Tutor</label>
             <select name="tutors" id="tutors" required>
                 <option value="">Please Select</option>
-                <option value="Tutor1">Enrique Nicolás Ketterer Ortiz</option>
-                <option value="Tutor2">Rahul Raghavan</option>
-                <option value="Tutor3">Razeen Hashmi</option>
+                <option value="Enrique Nicolás Ketterer Ortiz">Enrique Nicolás Ketterer Ortiz</option>
+                <option value="Rahul Raghavan">Rahul Raghavan</option>
+                <option value="Razeen Hashmi">Razeen Hashmi</option>
             </select>
             <br><br>
         </fieldset>
@@ -55,15 +55,15 @@
         <fieldset>
             <legend>Issue</legend>
             <label for="html">HTML</label>
-            <input type="checkbox" id="html" name="HTML" value="HTML">
+            <input type="checkbox" id="html" name="issue[]" value="HTML">
             <label for="css">CSS</label>
-            <input type="checkbox" id="css" name="CSS" value="CSS">
+            <input type="checkbox" id="css" name="issue[]" value="CSS">
             <label for="javascript">JavaScript</label>
-            <input type="checkbox" id="javascript" name="JavaScript" value="JavaScript">
+            <input type="checkbox" id="javascript" name="issue[]" value="JavaScript">
             <label for="php">PHP</label>
-            <input type="checkbox" id="php" name="PHP" value="PHP">
+            <input type="checkbox" id="php" name="issue[]" value="PHP">
             <label for="mysql">MySQL</label>
-            <input type="checkbox" id="mysql" name="MYSQL" value="MYSQL">
+            <input type="checkbox" id="mysql" name="issue[]" value="MYSQL">
             <br><br>
             <label for="description">Description of Issue</label><br>
             <textarea id="description" name="Description" rows="5" cols="100" placeholder="Please describe your issue here..." required></textarea>
